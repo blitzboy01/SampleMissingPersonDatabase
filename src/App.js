@@ -1,20 +1,85 @@
-const products = [
-  {title: 'Cabbage',isFruit:false,id:1},
-  {title:'Garlic', isFruit:false,id:2},
-  {title:'Apple', isFruit:true,id:3}
-]
+import "./App.css";
 
-export default function ShoppingList(){
-  const listItems = products.map(product =>
-    <li key={product.id}
-    style={{color:product.isFruit ?'magenta':'darkgreen'}}
-    >
-      {product.title}
-    </li>
+const missingPeople = [
+  {
+    img: "https://placehold.co/150x180?text=1",
+    age: 27,
+    eyes: "Brown",
+    hair: "Black",
+    height: "5′6″",
+    weight: "130 lbs",
+    lastSeen: "2023-10-01",
+  },
+  {
+    img: "https://placehold.co/150x180?text=2",
+    age: "34",
+    eyes: "Blue",
+    hair: "Blonde",
+    height: "5′9″",
+    weight: "150 lb",
+    lastSeen: "Jan 2024",
+  },
+  {
+    img: "https://placehold.co/150x180?text=3",
+    age: "34",
+    eyes: "Blue",
+    hair: "Blonde",
+    height: "5′9″",
+    weight: "150 lb",
+    lastSeen: "Jan 2024",
+  },
+  {
+    img: "https://placehold.co/150x180?text=4",
+    age: "34",
+    eyes: "Blue",
+    hair: "Blonde",
+    height: "5′9″",
+    weight: "150 lb",
+    lastSeen: "Jan 2024",
+  },
+];
+
+export function createCard(person) {
+  return (
+    <div className="missing-person-card">
+      <div className="missing-person-title">Missing Person</div>
+      <div className="missing-person-image-container">
+        <img
+          src={person.img}
+          alt="mssing person"
+          className="missing-person-image"
+        />
+        <div className="missing-person-description">
+          <div className="missing-person-age">Age: {person.age}</div>
+          <div className="missing-person-eyes">Eyes: {person.eyes}</div>
+          <div className="missing-person-hair">Hair: {person.hair}</div>
+          <div className="missing-person-height">Height: {person.height}</div>
+          <div className="missing-person-weight">Weight: {person.weight}</div>
+          <div className="missing-person-last-seen">
+            Last Seen: {person.lastSeen}
+          </div>
+        </div>
+      </div>
+    </div>
   );
+}
 
-  return(
-    <ul>{listItems}</ul>
+export default function App() {
+  return (
+    // <div className="App">
+    //   <h1>Missing People</h1>
+    //   <div className="cards-container">
+    //     {missingPeople.map((person) => createCard(person))}
+    //   </div>
+    // </div>
+    <>
+      <head>
+        <title>Guinevere Belmi Project</title>
+      </head>
+      
+      <div className="card-container">
+        {missingPeople.map((person) => createCard(person))}
+      </div>
+    </>
   );
-
 }
