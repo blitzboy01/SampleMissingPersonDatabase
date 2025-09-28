@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 
 const missingPeople = [
@@ -39,6 +40,18 @@ const missingPeople = [
   },
 ];
 
+export function setActiveLink(currentPath) {
+  const links = document.querySelectorAll("nav.main-nav a");
+  links.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href && href.includes(currentPath)) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
 export function createCard(person) {
   return (
     <div className="missing-person-card">
@@ -65,18 +78,27 @@ export function createCard(person) {
 }
 
 export default function App() {
+  const currentPage = window.location?.pathname?.slice(1) || "home";
+  useEffect(() => {
+    setActiveLink(currentPage);
+  }, [currentPage]);
   return (
-    // <div className="App">
-    //   <h1>Missing People</h1>
-    //   <div className="cards-container">
-    //     {missingPeople.map((person) => createCard(person))}
-    //   </div>
-    // </div>
     <>
       <head>
         <title>Guinevere Belmi Project</title>
       </head>
-      
+      <nav className="main-nav">
+        <a href="/home">
+          Home
+        </a>
+        <a href="/about">
+          About
+        </a>
+        <a href="/contact">
+          Contact
+        </a>
+      </nav>
+
       <div className="card-container">
         {missingPeople.map((person) => createCard(person))}
       </div>
