@@ -10,6 +10,7 @@ const missingPersons = [
     height: "5′6″",
     weight: "130 lb",
     lastSeen: "June 2023",
+    name:'Jane Doe'
   },
   {
     id: uuidv4(),
@@ -20,6 +21,7 @@ const missingPersons = [
     height: "5′9″",
     weight: "150 lb",
     lastSeen: "Jan 2024",
+    name:'John Smith'
   },
   {
     id: uuidv4(),
@@ -30,6 +32,7 @@ const missingPersons = [
     height: "5′9″",
     weight: "150 lb",
     lastSeen: "Jan 2024",
+    name:'Alice Johnson'
   },
   {
     id: uuidv4(),
@@ -40,6 +43,7 @@ const missingPersons = [
     height: "5′9″",
     weight: "150 lb",
     lastSeen: "Jan 2024",
+    name:'Bob Brown'
   },
 ];
 

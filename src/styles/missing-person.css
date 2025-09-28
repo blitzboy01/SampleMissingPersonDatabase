@@ -64,3 +64,31 @@
 .missing-person-card .missing-person-title {
     padding: .75rem 0;
 }
+
+@media (max-width: 600px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  .missing-person-card {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .missing-person__image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  .missing-person-title {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  .description-label,
+  .description-value {
+    font-size: 1rem;
+  }
+}
