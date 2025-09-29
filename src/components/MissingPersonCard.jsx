@@ -14,12 +14,13 @@ function MissingPersonCard({ person }) {
             className="missing-person__image"
           />
           <div className="missing-person__description">
-            {['Name',"Age", "Eyes", "Hair", "Height", "Weight", "Last Seen"].map((label, i) => (
+            {['Name',"Age", 'Gender',"Eyes", "Hair", "Height", "Weight", "Last Seen",].map((label, i) => (
               <div className="description-column" key={label}>
                 <div className="description-label">{label}</div>
                 <div className="description-value">{
                 label === 'Name' ? person.name :
                   label === "Age" ? person.age :
+                  label === 'Gender'?person.gender:
                   label === "Eyes" ? person.eyes :
                   label === "Hair" ? person.hair :
                   label === "Height" ? person.height :
