@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SampleMissingPersonDatabase/static/css/main.ce0abf37.css",
+    "main.js": "/SampleMissingPersonDatabase/static/js/main.19c45cef.js",
+    "index.html": "/SampleMissingPersonDatabase/index.html",
+    "main.ce0abf37.css.map": "/SampleMissingPersonDatabase/static/css/main.ce0abf37.css.map",
+    "main.19c45cef.js.map": "/SampleMissingPersonDatabase/static/js/main.19c45cef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce0abf37.css",
+    "static/js/main.19c45cef.js"
+  ]
+}
