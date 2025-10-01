@@ -1,6 +1,5 @@
 
 import Navbar from "../components/navbar";
-import PageTitle from "../components/PageTitle";
 import FooterLink from "../components/footerLink";
 
 export default function  ContactPage() {
@@ -12,10 +11,10 @@ export default function  ContactPage() {
             <p>If you have any questions, suggestions, or need assistance, please reach out to us at:</p>
             <ul>
                 <li>Email:
-                    <a href="mailto:"></a>
+                    <a href="mailto:guineverebelmi@gmail.com">Email Address</a>
                 </li>
-                <li>Phone: </li>
-                <li>Address: 123 Main St, Anytown, USA</li>
+                <li>Phone: 9123456789</li>
+                <li>Address: Philippines</li>
             </ul>
             <p>We are here to help and support you in any way we can. Your feedback is important to us!</p>
             </div>
