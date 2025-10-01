@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import missingPersons from "../data/missingPersons";
 import "../styles/missing-person-detail.css";
 import Navbar from "../components/navbar";
+import PageTitle from "../components/PageTitle";
 
 const tabs = ["Case", "Videos", "Contacts"];
 
@@ -15,9 +16,10 @@ function MissingPersonDetail() {
 
   return (
     <div className="missing-person-detail">
+      <PageTitle title={`Missing Person Database - ${person.name || 'Unknown'}`} />
       <Navbar />
         <div className="person-header">
-            <img src={person.img} alt="missing person" />
+            <img src={person.img} alt="missing person" />0
             <div>
             <div className="person-id">Missing Person /ID #{person.id}</div>
             <div className="person-name">{person.name||'Name Unknown'}, {person.gender||'Prefer not to say'}</div>

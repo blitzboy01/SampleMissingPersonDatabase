@@ -1,0 +1,75 @@
+.homepage-haiku-container{
+    background: rgba(255, 255, 255, 0.98);
+    padding: 80px 60px;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+
+}
+.homepage-haiku-section{
+    font-size: 38px;
+    line-height: 1.8;
+    color: #2d3748;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.haiku-line{
+    display:block;
+    animation: slideLine 0.8s ease-out backwards;
+}
+
+.haiku-line:nth-child(1){
+    animation-delay: 0.3s;
+}
+
+.haiku-line:nth-child(2){
+    animation-delay: 0.6s;
+    color: #667eea;
+    font-weight: 400;
+}
+
+.haiku-line:nth-child(3){
+    animation-delay: 0.9s;
+}
+@keyframes slideLine {
+   from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.homepage-info-container{
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.6;
+
+}
+
+.divider{
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a8a9ac, transparent);
+    margin: 2rem 0;
+}
+
+        .homepage-welcome-section,
+        .homepage-mission-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+

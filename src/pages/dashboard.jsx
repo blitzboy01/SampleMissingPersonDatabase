@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import '../index.css';
 import MissingPersonCard from "../components/MissingPersonCard";
 import missingPersons from "../data/missingPersons";
+import FooterLink from "../components/footerLink";
 
 
 export default function Dashboard() {
@@ -17,6 +18,7 @@ export default function Dashboard() {
                     ))}
                 </div>
             </div>
+            <FooterLink/>
             </div>
     );
 }
