@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SampleMissingPersonDatabase/static/css/main.ce0abf37.css",
-    "main.js": "/SampleMissingPersonDatabase/static/js/main.2189e241.js",
+    "main.js": "/SampleMissingPersonDatabase/static/js/main.1c719574.js",
     "index.html": "/SampleMissingPersonDatabase/index.html",
     "main.ce0abf37.css.map": "/SampleMissingPersonDatabase/static/css/main.ce0abf37.css.map",
-    "main.2189e241.js.map": "/SampleMissingPersonDatabase/static/js/main.2189e241.js.map"
+    "main.1c719574.js.map": "/SampleMissingPersonDatabase/static/js/main.1c719574.js.map"
   },
   "entrypoints": [
     "static/css/main.ce0abf37.css",
-    "static/js/main.2189e241.js"
+    "static/js/main.1c719574.js"
   ]
 }
