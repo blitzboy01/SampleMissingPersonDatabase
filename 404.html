@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      // Save the path the user was trying to access
-      sessionStorage.setItem('redirectPath', 
-        location.pathname.slice(0, location.pathname.lastIndexOf('/')) + 
-        location.pathname.slice(location.pathname.lastIndexOf('/')) + 
-        location.search + 
-        location.hash
-      );
-      
-      // Redirect to the base URL
-      location.replace('/SampleMissingPersonDatabase/');
+      // Check for redirect and restore the path
+      (function () {
+        var redirectPath = sessionStorage.getItem("redirectPath");
+        if (redirectPath) {
+          sessionStorage.removeItem("redirectPath");
+
+          // Use replaceState to update the URL without reloading
+          var baseUrl = "/SampleMissingPersonDatabase";
+          var pathWithoutBase = redirectPath.replace(baseUrl, "");
+
+          // Update browser URL
+          history.replaceState(null, null, redirectPath);
+        }
+      })();
     </script>
   </head>
   <body>
