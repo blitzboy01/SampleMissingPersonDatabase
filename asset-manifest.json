@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SampleMissingPersonDatabase/static/css/main.c3061973.css",
-    "main.js": "/SampleMissingPersonDatabase/static/js/main.79958d36.js",
-    "index.html": "/SampleMissingPersonDatabase/index.html",
-    "main.c3061973.css.map": "/SampleMissingPersonDatabase/static/css/main.c3061973.css.map",
-    "main.79958d36.js.map": "/SampleMissingPersonDatabase/static/js/main.79958d36.js.map"
+    "main.css": "/MissingPersonDatabase/static/css/main.c3061973.css",
+    "main.js": "/MissingPersonDatabase/static/js/main.51cb8ac9.js",
+    "index.html": "/MissingPersonDatabase/index.html",
+    "main.c3061973.css.map": "/MissingPersonDatabase/static/css/main.c3061973.css.map",
+    "main.51cb8ac9.js.map": "/MissingPersonDatabase/static/js/main.51cb8ac9.js.map"
   },
   "entrypoints": [
     "static/css/main.c3061973.css",
-    "static/js/main.79958d36.js"
+    "static/js/main.51cb8ac9.js"
   ]
 }
